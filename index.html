@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Git - ćwiczenia</title>
+    <title>Formularz HTML</title>
 </head>
 <body>
-    <p>Treść paragrafu pierwszego</p>
+   
+    <form action="form.php" method="post">
+    
+    <label for="imie">Imię:</label> <br>
+    <input type="text" name="imie" id="imie"> <br>
+    
+    <label for="nazwisko">Nazwisko:</label> <br>
+    <input type="text" name="nazwisko" id="nazwisko"> <br>
+    
+    <label id="email">Email:</label> <br>
+    <input type="text" name="mail" id="mail"> <br>
+    
+    <label id="telefon">Telefon:</label> <br>
+    <input type="number" name="numer" id="numer"> <br>
+    
+    <label for="miasto">Miasto:</label> <br>
+    
+    <select name="miasto" id="miasto">
+    <option value="krakow">Kraków</option>
+    <option value="warszawa">Warszawa</option>
+    <option value="gdansk">Gdańsk</option>
+        </select> <br>
+    
+    <label id="plec">Płeć:</label> <br>
 
-    <div>To jest div</div>
-
-    <p>Treść drugiego paragrafu</p>
-
+    
+      <input type="radio" name="gender" value="male" checked> Mężczyzna<br>
+      <input type="radio" name="gender" value="female"> Kobieta<br>
+    </form> 
+ <br>
+    
+    <label id="dane">Zgoda na Dane Osobowe:</label> <br>
+        <form action="demo_form.asp" method="get">
+      <input type="checkbox" name="vehicle" value="Bike"> WYRAŻAM ZGODĘ<br>
+      <input type="checkbox" name="vehicle" value="Car" checked> NIE WYRAŻAM ZGODY<br>
+     <br>
+    
+    <label id="news">Wiadomość:</label> <br>
+    <textarea rows="10" cols="22"> </textarea> <br>
+    
+    <input type="submit" value="Wyślij">
+    
+    </form>
+    
 </body>
 </html>
